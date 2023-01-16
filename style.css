@@ -1,0 +1,328 @@
+/*------------------------
+           Fonts
+---------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+/*-----------------------------
+Common styles or utilities
+------------------------------*/
+.title {
+  font-family: "Poppins", sans-serif;
+  color: #3a3a3a;
+}
+
+.description {
+  font-family: "Poppins", sans-serif;
+}
+
+.whole-container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+main {
+    width: 1047px;
+    margin: 0 auto;
+}
+/*-----------------------------
+            header
+------------------------------*/
+
+/*-----------------------------
+            nav bar
+------------------------------*/
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 95px;
+  align-items: center;
+}
+
+.navigation .title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.navigation .buttons {
+  display: flex;
+  gap: 34px;
+}
+
+.navigation .buttons a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.hidden-button > .hide-2 {
+  visibility: hidden;
+}
+
+/*-----------------------------
+        banner styles
+------------------------------*/
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 73px;
+}
+
+.banner .text .title {
+  font-weight: 700;
+  font-size: 52px;
+  margin-bottom: 16px;
+}
+
+.banner .text .description {
+  font-weight: 600;
+  font-size: 16px;
+  color: #3a3a3a;
+  margin-bottom: 25px;
+  max-width: 505px;
+}
+
+.banner .text .button {
+  background: #e02c6d;
+  border-radius: 41px;
+  width: 196px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  gap: 8px;
+}
+
+.banner .text .button a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.banner img {
+  background-image: url("./images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*----------------------
+        Sponsors
+-----------------------*/
+
+.sponsors .row-1,
+.row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  border-top: 1px solid #aaaaaa48;
+  border-bottom: 1px solid #aaaaaa48;
+  padding: 35px 62px;
+  margin-bottom: 100px;
+}
+
+/*-----------------------------
+            header end
+------------------------------*/
+
+/*-----------------------------
+     Popular Accessories
+------------------------------*/
+
+.collection .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.collection .title {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  padding: 25px 0 25px;
+}
+
+.item {
+  width: 329px;
+  height: 476px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+}
+
+.item .text {
+  margin: 15px;
+}
+
+.item div img {
+  width: 300px;
+  height: 256px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.item-title {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 28px;
+  color: #18191f;
+  margin: 16px 0 6px;
+}
+
+.item .price {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 8px;
+}
+
+.item .stars {
+  font-size: 11px;
+  color: #fb8200;
+}
+
+.item .no {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #5e6366;
+}
+
+.item .description {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #787885;
+}
+
+.rating {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 688px) {
+  /*-----------------------------
+    Common styles or utilities
+    ------------------------------*/
+  .whole-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /*-----------------------------
+                nav bar
+    ------------------------------*/
+
+  .hidden-button .title {
+    text-align: center;
+  }
+
+  .hidden-button > .hide-2 > a {
+    visibility: visible;
+    color: #3a3a3a;
+  }
+
+  .navigation .buttons {
+    display: none;
+  }
+
+  .hidden-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 59px;
+  }
+
+  .navigation .hide {
+    display: none;
+  }
+
+  .navigation .title {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .navigation {
+    display: flex;
+    margin-top: 35px;
+  }
+
+  /*-----------------------------
+            banner styles
+    ------------------------------*/
+
+  .banner {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 22px;
+    margin-bottom: 50px;
+  }
+
+  .banner > .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner > .text > .title > br {
+    display: none;
+  }
+
+  .banner > .text > .title {
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  .banner .image img {
+    width: 257px;
+    background-size: 257px;
+  }
+
+  /*----------------------
+          Sponsors
+  -----------------------*/
+
+  .sponsors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .sponsors .row-1 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .sponsors .row-2 {
+    display: flex;
+    gap: 23px;
+    justify-content: center;
+  }
+
+  .sponsors img {
+    height: 25px;
+  }
+}
